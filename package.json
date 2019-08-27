@@ -10,5 +10,9 @@
     "dmd": "git+https://github.com/AxonTeam/dmd",
     "jsdoc-api": "^5.0.2",
     "jsdoc-parse": "^3.0.1"
+  },
+  "devDependencies": {
+    "@axonteam/eslint-config": "^2.2.0",
+    "eslint": "^6.2.2"
   }
 }
