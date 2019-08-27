@@ -1,0 +1,14 @@
+{
+  "name": "@axonteam/doc-gen",
+  "version": "1.0.0",
+  "description": "Doc generator for AxonTeamprojects",
+  "main": "index.js",
+  "repository": "https://github.com/AxonTeam/doc-gen",
+  "author": "khaazz <khaaz.dev@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dmd": "git+https://github.com/AxonTeam/dmd",
+    "jsdoc-api": "^5.0.2",
+    "jsdoc-parse": "^3.0.1"
+  }
+}
