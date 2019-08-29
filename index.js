@@ -1,4 +1,5 @@
 const Generator = require('./Generator');
+const Writer = require('./Writer');
 
 /* options =
 [
@@ -9,11 +10,19 @@ const Generator = require('./Generator');
 ]
 */
 
-function main(options) {
-    const generator = new Generator();
+exports.generate = async function generate(inputBase, outputBase, options) {
+    const generator = new Generator(inputBase);
+    const writer = new Writer(outputBase);
+    
     for (const elem of options) {
-        generator.render(elem.input);
-        // write resulte in correct file elem.output
+        try {
+            const data = await generator.render(elem.input);
+            await writer.write(elem.output, data);
+        } catch (err) {
+            console.error(`ERROR while generating doc for ${elem.output}. Error:\n${err.stack}`);
+        }
+        console.log(`> ${elem.input} - Doc successfully generated.`);
     }
-// run doc gen for every input / output
-}
+
+    return;
+};
