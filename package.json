@@ -1,11 +1,17 @@
 {
   "name": "@axonteam/doc-gen",
   "version": "1.0.0",
-  "description": "Doc generator for AxonTeamprojects",
+  "description": "Doc generator for AxonTeam projects",
   "main": "index.js",
   "repository": "https://github.com/AxonTeam/doc-gen",
   "author": "khaazz <khaaz.dev@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "node ./tests/test"
+  },
+  "bin" : { 
+    "gen" : "./cli.js" 
+  }, 
   "dependencies": {
     "dmd": "git+https://github.com/AxonTeam/dmd",
     "jsdoc-api": "^5.0.2",
