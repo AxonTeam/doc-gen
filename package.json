@@ -9,13 +9,13 @@
   "scripts": {
     "test": "node ./tests/test"
   },
-  "bin" : { 
-    "gen" : "./scripts/cli.js" 
-  }, 
+  "bin": {
+    "gen": "./scripts/cli.js"
+  },
   "dependencies": {
     "dmd": "git+https://github.com/AxonTeam/dmd",
-    "jsdoc-api": "^5.0.2",
-    "jsdoc-parse": "^3.0.1"
+    "jsdoc-api": "^5.0.4",
+    "jsdoc-parse": "^4.0.1"
   },
   "devDependencies": {
     "@axonteam/eslint-config": "^2.2.0",
