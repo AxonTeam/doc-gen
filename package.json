@@ -1,6 +1,6 @@
 {
   "name": "@axonteam/doc-gen",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Doc generator for AxonTeam projects",
   "main": "index.js",
   "repository": "https://github.com/AxonTeam/doc-gen",
@@ -10,7 +10,7 @@
     "test": "node ./tests/test"
   },
   "bin" : { 
-    "gen" : "./cli.js" 
+    "gen" : "./scripts/cli.js" 
   }, 
   "dependencies": {
     "dmd": "git+https://github.com/AxonTeam/dmd",
