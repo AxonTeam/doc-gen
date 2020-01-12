@@ -1,6 +1,6 @@
 {
   "name": "@axonteam/doc-gen",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Doc generator for AxonTeam projects",
   "main": "index.js",
   "repository": "https://github.com/AxonTeam/doc-gen",
