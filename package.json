@@ -7,7 +7,8 @@
   "author": "khaazz <khaaz.dev@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "node ./tests/test"
+    "test": "node ./tests/test",
+    "lint": "eslint ."
   },
   "bin": {
     "gen": "./scripts/cli.js"
