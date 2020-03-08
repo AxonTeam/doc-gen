@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "dmd": "git+https://github.com/AxonTeam/dmd",
-    "jsdoc-api": "^5.0.4",
+    "jsdoc-api": "git+https://github.com/AxonTeam/jsdoc-api",
     "jsdoc-parse": "^4.0.1"
   },
   "devDependencies": {
