@@ -1,3 +1,4 @@
 {
-    "extends": "@axonteam"
+    "extends": "@axonteam",
+    "parser": "babel-eslint"
 }
