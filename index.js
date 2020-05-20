@@ -16,7 +16,7 @@ exports.generate = async function generate(inputBase, outputBase, options) {
     
     for (const elem of options) {
         try {
-            const data = await generator.render(elem.input);
+            const data = await generator.render(elem.input, options);
             await writer.write(elem.output, data);
         } catch (err) {
             console.error(`ERROR while generating doc for ${elem.output}. Error:\n${err.stack}`);
